@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+/* MAIN BOX */
+.container{
+    width:90%;
+    height:95vh;
+    margin:30px auto;
+    display:flex;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* LEFT */
+.left{
+    width:50%;
+    background:#ffd500;
+    padding:50px;
+    position:relative;                                         
+}
+
+.logo{
+    width:150px;
+    margin-bottom:80px;
+}
+
+.gen{
+    font-size:15px;
+    letter-spacing:8px;
+    margin-bottom:20px;
+}
+
+h1{
+    font-size:100px;
+    font-weight:bold;
+    margin-bottom:20px;
+    line-height:1;
+}
+
+/* Fix: make the right panel scale correctly on smaller viewports */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .pikachu {
+        width: 420px;
+        left: -40px;
+        top: 80px;
+    }
+}
+
+
+.desc{
+    font-size:24px;
+    line-height:1.6;
+    max-width:500px;
+    color:#333;
+}
+
+.count{
+    margin-top:50px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* RIGHT */
+.right{
+    width:50%;
+    background:#f8efd7;
+    position:relative;
+}
+
+/* MENU */
+.menu{
+    position:absolute;
+    top:30px;
+    right:40px;
+    font-size:45px;
+    cursor:pointer;
+}
+
+/* PIKACHU */
+.pikachu{
+    position:absolute;
+    width:650px;
+    left:-150px;
+    top:120px;
+}
+
+/* DOTS */
+.dots{
+    position:absolute;
+    right:40px;
+    top:50%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.dots span{
+    width:12px;
+    height:12px;
+    background:#ffd500;
+    border-radius:50%;
+}
+
+.dots .active{
+    background:black;
+}
