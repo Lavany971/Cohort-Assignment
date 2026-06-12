@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    background:#1f1b2d;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:14px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+}
+
+.social{
+    display:flex;
+    gap:15px;
+    font-size:20px;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+
+    background-image:
+    url("");
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    backdrop-filter:blur(4px);
+    background:rgba(0,0,0,.2);
+}
+
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:5;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.hero-content h1{
+    font-size:90px;
+    font-weight:900;
+    letter-spacing:3px;
+}
+
+.hero-content h3{
+    font-size:28px;
+    font-weight:300;
+    margin-bottom:30px;
+}
+
+.hero-content button{
+    padding:18px 60px;
+    border:none;
+    background:#e3c165;
+    font-weight:700;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+/* CHARACTER */
+
+.character{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    height:75%;
+    z-index:10;
+}
+
+/* CURVE */
+
+.curve{
+    width:120%;
+    height:260px;
+    background:#241f34;
+
+    position:absolute;
+    bottom:-180px;
+    left:50%;
+    transform:translateX(-50%);
+
+    border-radius:100%;
+    z-index:20;
+}
+
+/* VISION */
+
+.vision{
+    background:#241f34;
+    padding:100px 10%;
+    text-align:center;
+}
+
+.vision h2{
+    font-size:45px;
+    margin-bottom:25px;
+}
+
+.line{
+    width:80%;
+    height:2px;
+    background:#c9a45d;
+    margin:0 auto 60px;
+    position:relative;
+}
+
+.line span{
+    width:15px;
+    height:15px;
+    background:#c9a45d;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+}
+
+.vision-content{
+    display:flex;
+    justify-content:space-between;
+    gap:80px;
+}
+
+.left,
+.right{
+    flex:1;
+    text-align:left;
+    line-height:1.8;
+    color:#d5d5d5;
+}
